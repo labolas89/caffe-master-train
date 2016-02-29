@@ -1,0 +1,16 @@
+net: "git/model/2d_train_test.prototxt"
+test_iter: 100
+test_interval: 2000
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 50000
+display: 500
+max_iter: 200000
+momentum: 0.9
+#weight_decay: 0.0005
+weight_decay: 0.004
+snapshot: 50000
+snapshot_format: HDF5
+snapshot_prefix: "git/trained_data/2d_train"
+solver_mode: CPU
